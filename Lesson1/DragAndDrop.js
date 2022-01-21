@@ -1,13 +1,13 @@
 window.onload = function () {
-    var i;
-    var shirt = document.getElementById('shirt');
-    var pants = document.getElementById('pants');
-    var boots = document.getElementById('boots');
-    var price = document.getElementsByTagName('span')[0];
-    var target = document.getElementById('target');
+    let i;
+    const shirt = document.getElementById('shirt');
+    const pants = document.getElementById('pants');
+    const boots = document.getElementById('boots');
+    const price = document.getElementsByTagName('span')[0];
+    const target = document.getElementById('target');
     price.innerHTML = '0';
-    var arr = [];
-    var data;
+    const arr = [];
+    let data;
 
     shirt.addEventListener('click', () => {
         this.style.border = "4px solid black";
@@ -41,8 +41,8 @@ window.onload = function () {
         if (evt.preventDefault()) evt.preventDefault();
         if (evt.stopPropagation()) evt.stopPropagation();
         this.style.border = ""
-        var id = evt.dataTransfer.getData('Text');
-        var elem = document.getElementById(id);
+        const id = evt.dataTransfer.getData('Text');
+        const elem = document.getElementById(id);
         this.appendChild(elem);
         price.innerHTML = +(price.innerHTML) + +(elem.getAttribute('data-price'))
         return false;
