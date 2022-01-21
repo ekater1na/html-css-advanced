@@ -1,0 +1,27 @@
+body {
+    background: lightcyan;
+}
+
+div {
+    border: 1px solid #42d745;
+    background: pink;
+    width: 200px;
+}
+
+.row {
+    display: flex;
+    height: 500px;
+}
+
+.column {
+    flex: 33%;
+    min-width: 200px;
+}
+
+#cart {
+    background: #42d745;
+}
+
+#target {
+    height: 450px;
+}

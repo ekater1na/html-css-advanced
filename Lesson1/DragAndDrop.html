@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drag-end-drop</title>
+    <link href="DragAndDrop.css" rel="stylesheet">
+</head>
+<body>
+<div class="row" id="shop">
+    <div class="column">
+        <div data-price="50" draggable="true" id="shirt">
+            <h5>Цвет: синий</h5>
+            <h5>Размер: L</h5>
+            <h5>Стоимость: 50$</h5>
+        </div>
+        <div data-price="100" draggable="true" id="pants">
+            <h5>Цвет: белый</h5>
+            <h5>Размер: L</h5>
+            <h5>Стоимость: 100$</h5>
+        </div>
+        <div data-price="200" draggable="true" id="boots">
+            <h5>Цвет: красный</h5>
+            <h5>Размер: M</h5>
+            <h5>Стоимость: 200$</h5>
+        </div>
+    </div>
+
+
+    <div id="cart">
+        <div class="column">
+            <div id="target">Перенести в эту область</div>
+        </div>
+        <div class="column">
+            <div id="sum">Сумма заказа:<span></span>$</div>
+        </div>
+    </div>
+</div>
+<script src="DragAndDrop.js"></script>
+</body>
+</html>
